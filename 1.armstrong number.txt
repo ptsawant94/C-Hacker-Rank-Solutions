@@ -1,0 +1,38 @@
+#include<stdio.h>
+#include<conio.h>
+#include<math.h>
+
+int main()
+{
+    int NUM,REM,REM_CUBE,BUF=0,buf1;
+    printf("ARMSTRONG NUMBERS BETWEEN 1 AND 500 ARE:\n");
+
+    for(NUM=1;NUM<=500;NUM++)
+    {
+        buf1=NUM;
+        //CALULATING THE SUM OF CUBES OF THE DIGITS
+        while(buf1!=0)
+        {
+        REM=buf1%10;
+        buf1=buf1/10;
+        REM_CUBE=REM*REM*REM;
+        BUF=BUF+REM_CUBE;
+        }
+        //CHECKING IF IT'S AN ARMSTRONG NUMBER
+        if(BUF==NUM)
+        {
+            printf("%d\n",NUM);
+        }
+        //INTIALISING VARIABLES TO 0 WHICH NEEDED TO BE USED AGAIN
+        BUF=0;
+        REM_CUBE=0;
+        buf1=0;
+        REM=0;
+
+    }
+
+    return 0;
+
+}
+
+
