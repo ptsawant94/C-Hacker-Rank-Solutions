@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    while(1)
+    {
+    int cost_price,selling_price,profit,loss;
+    printf("\nenter the values of cost price and selling price\n");
+    scanf("\n\n%d%d",&cost_price,&selling_price);
+    if(cost_price<selling_price)
+    {
+        profit=selling_price-cost_price;
+        printf("\n\nwell done...you have made the profit of %d",profit);
+    }
+    else if(cost_price>selling_price)
+    {
+        loss=cost_price-selling_price;
+        printf("\n\nohh no ....you are in loss of %d",loss);
+    }
+    else
+        printf("oops why did you sell it without any profit");
+    }
+
+    return 0;
+
+
+}
+
+
+
