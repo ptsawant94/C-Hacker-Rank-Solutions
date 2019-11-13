@@ -1,0 +1,26 @@
+#include<stdio.h>
+#include<conio.h>
+#include<math.h>
+
+
+void main()
+{
+    while(1)
+{
+    int NUM,POWER,i,buf;
+    printf("\nENTER THE NUMBER AND ITS POWER");
+    scanf("\n%d\n%d",&NUM,&POWER);
+    buf=NUM;
+    for(i=(POWER-1);i>0;i--)
+    {
+        NUM=NUM*buf;
+    }
+printf("\nRESULT IS =%d",NUM);
+
+
+}
+return 0;
+}
+
+
+
