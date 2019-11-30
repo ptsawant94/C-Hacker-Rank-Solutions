@@ -1,0 +1,395 @@
+
+#include <stdio.h>
+#include <string.h>
+
+int j,n;
+void changePosition(char *ch1, char *ch2)//to change position of the two characters in the string
+{
+    char tmp;
+    tmp = *ch1;
+    *ch1 = *ch2;
+    *ch2 = tmp;
+}
+
+void multi_swap(char *cht, int stno, int endno)
+{
+    int i;
+
+       for (i = stno; i <= endno-3; i++)
+       {
+
+          changePosition((cht+5), (cht+(4)));
+          puts(cht);
+
+          changePosition((cht+5), (cht+(3)));
+          puts(cht);
+
+       }
+   }
+
+
+int main()
+{
+int k;
+    char str[] = "abcdef";
+   printf("\n\n Pointer : Generate permutations of a given string :\n");
+   printf("--------------------------------------------------------\n");
+     n = strlen(str)-1;
+    printf(" The permutations of the string are : \n");
+    /*procedure for permutations of 5 char string*/
+
+    multi_swap(str,0,n);
+    changePosition(str+2,str+3);
+    multi_swap(str,0,n);
+    changePosition(str+2,str+4);
+    multi_swap(str,0,n);
+    changePosition(str+2,str+5);
+    multi_swap(str,0,n);
+
+    changePosition(str+1,str+2);
+
+    multi_swap(str,0,n);
+    changePosition(str+2,str+3);
+    multi_swap(str,0,n);
+    changePosition(str+2,str+4);
+    multi_swap(str,0,n);
+    changePosition(str+2,str+5);
+    multi_swap(str,0,n);
+
+    changePosition(str+1,str+2);
+
+    multi_swap(str,0,n);
+    changePosition(str+2,str+3);
+    multi_swap(str,0,n);
+    changePosition(str+2,str+4);
+    multi_swap(str,0,n);
+    changePosition(str+2,str+5);
+    multi_swap(str,0,n);
+
+    changePosition(str+1,str+2);
+
+    multi_swap(str,0,n);
+    changePosition(str+2,str+3);
+    multi_swap(str,0,n);
+    changePosition(str+2,str+4);
+    multi_swap(str,0,n);
+    changePosition(str+2,str+5);
+    multi_swap(str,0,n);
+
+    changePosition(str+1,str+2);
+
+    multi_swap(str,0,n);
+    changePosition(str+2,str+3);
+    multi_swap(str,0,n);
+    changePosition(str+2,str+4);
+    multi_swap(str,0,n);
+    changePosition(str+2,str+5);
+    multi_swap(str,0,n);
+
+    changePosition(str+0,str+1);//first transition
+
+     multi_swap(str,0,n);
+    changePosition(str+2,str+3);
+    multi_swap(str,0,n);
+    changePosition(str+2,str+4);
+    multi_swap(str,0,n);
+    changePosition(str+2,str+5);
+    multi_swap(str,0,n);
+
+    changePosition(str+1,str+2);
+
+    multi_swap(str,0,n);
+    changePosition(str+2,str+3);
+    multi_swap(str,0,n);
+    changePosition(str+2,str+4);
+    multi_swap(str,0,n);
+    changePosition(str+2,str+5);
+    multi_swap(str,0,n);
+
+    changePosition(str+1,str+2);
+
+    multi_swap(str,0,n);
+    changePosition(str+2,str+3);
+    multi_swap(str,0,n);
+    changePosition(str+2,str+4);
+    multi_swap(str,0,n);
+    changePosition(str+2,str+5);
+    multi_swap(str,0,n);
+
+    changePosition(str+1,str+2);
+
+    multi_swap(str,0,n);
+    changePosition(str+2,str+3);
+    multi_swap(str,0,n);
+    changePosition(str+2,str+4);
+    multi_swap(str,0,n);
+    changePosition(str+2,str+5);
+    multi_swap(str,0,n);
+
+    changePosition(str+1,str+2);
+
+    multi_swap(str,0,n);
+    changePosition(str+2,str+3);
+    multi_swap(str,0,n);
+    changePosition(str+2,str+4);
+    multi_swap(str,0,n);
+    changePosition(str+2,str+5);
+    multi_swap(str,0,n);
+
+    changePosition(str+0,str+2);//first transition
+
+     multi_swap(str,0,n);
+    changePosition(str+2,str+3);
+    multi_swap(str,0,n);
+    changePosition(str+2,str+4);
+    multi_swap(str,0,n);
+    changePosition(str+2,str+5);
+    multi_swap(str,0,n);
+
+    changePosition(str+1,str+2);
+
+    multi_swap(str,0,n);
+    changePosition(str+2,str+3);
+    multi_swap(str,0,n);
+    changePosition(str+2,str+4);
+    multi_swap(str,0,n);
+    changePosition(str+2,str+5);
+    multi_swap(str,0,n);
+
+    changePosition(str+1,str+2);
+
+    multi_swap(str,0,n);
+    changePosition(str+2,str+3);
+    multi_swap(str,0,n);
+    changePosition(str+2,str+4);
+    multi_swap(str,0,n);
+    changePosition(str+2,str+5);
+    multi_swap(str,0,n);
+
+    changePosition(str+1,str+2);
+
+    multi_swap(str,0,n);
+    changePosition(str+2,str+3);
+    multi_swap(str,0,n);
+    changePosition(str+2,str+4);
+    multi_swap(str,0,n);
+    changePosition(str+2,str+5);
+    multi_swap(str,0,n);
+
+    changePosition(str+1,str+2);
+
+    multi_swap(str,0,n);
+    changePosition(str+2,str+3);
+    multi_swap(str,0,n);
+    changePosition(str+2,str+4);
+    multi_swap(str,0,n);
+    changePosition(str+2,str+5);
+    multi_swap(str,0,n);
+
+    changePosition(str+0,str+3);//first transition
+
+     multi_swap(str,0,n);
+    changePosition(str+2,str+3);
+    multi_swap(str,0,n);
+    changePosition(str+2,str+4);
+    multi_swap(str,0,n);
+    changePosition(str+2,str+5);
+    multi_swap(str,0,n);
+
+    changePosition(str+1,str+2);
+
+    multi_swap(str,0,n);
+    changePosition(str+2,str+3);
+    multi_swap(str,0,n);
+    changePosition(str+2,str+4);
+    multi_swap(str,0,n);
+    changePosition(str+2,str+5);
+    multi_swap(str,0,n);
+
+    changePosition(str+1,str+2);
+
+    multi_swap(str,0,n);
+    changePosition(str+2,str+3);
+    multi_swap(str,0,n);
+    changePosition(str+2,str+4);
+    multi_swap(str,0,n);
+    changePosition(str+2,str+5);
+    multi_swap(str,0,n);
+
+    changePosition(str+1,str+2);
+
+    multi_swap(str,0,n);
+    changePosition(str+2,str+3);
+    multi_swap(str,0,n);
+    changePosition(str+2,str+4);
+    multi_swap(str,0,n);
+    changePosition(str+2,str+5);
+    multi_swap(str,0,n);
+
+    changePosition(str+1,str+2);
+
+    multi_swap(str,0,n);
+    changePosition(str+2,str+3);
+    multi_swap(str,0,n);
+    changePosition(str+2,str+4);
+    multi_swap(str,0,n);
+    changePosition(str+2,str+5);
+    multi_swap(str,0,n);
+
+    changePosition(str+0,str+4);//first transition
+
+     multi_swap(str,0,n);
+    changePosition(str+2,str+3);
+    multi_swap(str,0,n);
+    changePosition(str+2,str+4);
+    multi_swap(str,0,n);
+    changePosition(str+2,str+5);
+    multi_swap(str,0,n);
+
+    changePosition(str+1,str+2);
+
+    multi_swap(str,0,n);
+    changePosition(str+2,str+3);
+    multi_swap(str,0,n);
+    changePosition(str+2,str+4);
+    multi_swap(str,0,n);
+    changePosition(str+2,str+5);
+    multi_swap(str,0,n);
+
+    changePosition(str+1,str+2);
+
+    multi_swap(str,0,n);
+    changePosition(str+2,str+3);
+    multi_swap(str,0,n);
+    changePosition(str+2,str+4);
+    multi_swap(str,0,n);
+    changePosition(str+2,str+5);
+    multi_swap(str,0,n);
+
+    changePosition(str+1,str+2);
+
+    multi_swap(str,0,n);
+    changePosition(str+2,str+3);
+    multi_swap(str,0,n);
+    changePosition(str+2,str+4);
+    multi_swap(str,0,n);
+    changePosition(str+2,str+5);
+    multi_swap(str,0,n);
+
+    changePosition(str+1,str+2);
+
+    multi_swap(str,0,n);
+    changePosition(str+2,str+3);
+    multi_swap(str,0,n);
+    changePosition(str+2,str+4);
+    multi_swap(str,0,n);
+    changePosition(str+2,str+5);
+    multi_swap(str,0,n);
+
+    changePosition(str+0,str+5);//first transition
+
+     multi_swap(str,0,n);
+    changePosition(str+2,str+3);
+    multi_swap(str,0,n);
+    changePosition(str+2,str+4);
+    multi_swap(str,0,n);
+    changePosition(str+2,str+5);
+    multi_swap(str,0,n);
+
+    changePosition(str+1,str+2);
+
+    multi_swap(str,0,n);
+    changePosition(str+2,str+3);
+    multi_swap(str,0,n);
+    changePosition(str+2,str+4);
+    multi_swap(str,0,n);
+    changePosition(str+2,str+5);
+    multi_swap(str,0,n);
+
+    changePosition(str+1,str+2);
+
+    multi_swap(str,0,n);
+    changePosition(str+2,str+3);
+    multi_swap(str,0,n);
+    changePosition(str+2,str+4);
+    multi_swap(str,0,n);
+    changePosition(str+2,str+5);
+    multi_swap(str,0,n);
+
+    changePosition(str+1,str+2);
+
+    multi_swap(str,0,n);
+    changePosition(str+2,str+3);
+    multi_swap(str,0,n);
+    changePosition(str+2,str+4);
+    multi_swap(str,0,n);
+    changePosition(str+2,str+5);
+    multi_swap(str,0,n);
+
+    changePosition(str+1,str+2);
+
+    multi_swap(str,0,n);
+    changePosition(str+2,str+3);
+    multi_swap(str,0,n);
+    changePosition(str+2,str+4);
+    multi_swap(str,0,n);
+    changePosition(str+2,str+5);
+    multi_swap(str,0,n);
+
+    changePosition(str+0,str+6);//first transition
+
+     multi_swap(str,0,n);
+    changePosition(str+2,str+3);
+    multi_swap(str,0,n);
+    changePosition(str+2,str+4);
+    multi_swap(str,0,n);
+    changePosition(str+2,str+5);
+    multi_swap(str,0,n);
+
+    changePosition(str+1,str+2);
+
+    multi_swap(str,0,n);
+    changePosition(str+2,str+3);
+    multi_swap(str,0,n);
+    changePosition(str+2,str+4);
+    multi_swap(str,0,n);
+    changePosition(str+2,str+5);
+    multi_swap(str,0,n);
+
+    changePosition(str+1,str+2);
+
+    multi_swap(str,0,n);
+    changePosition(str+2,str+3);
+    multi_swap(str,0,n);
+    changePosition(str+2,str+4);
+    multi_swap(str,0,n);
+    changePosition(str+2,str+5);
+    multi_swap(str,0,n);
+
+    changePosition(str+1,str+2);
+
+    multi_swap(str,0,n);
+    changePosition(str+2,str+3);
+    multi_swap(str,0,n);
+    changePosition(str+2,str+4);
+    multi_swap(str,0,n);
+    changePosition(str+2,str+5);
+    multi_swap(str,0,n);
+
+    changePosition(str+1,str+2);
+
+    multi_swap(str,0,n);
+    changePosition(str+2,str+3);
+    multi_swap(str,0,n);
+    changePosition(str+2,str+4);
+    multi_swap(str,0,n);
+    changePosition(str+2,str+5);
+    multi_swap(str,0,n);
+
+
+
+
+
+
+return 0;
+}

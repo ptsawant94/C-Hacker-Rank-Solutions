@@ -1,0 +1,93 @@
+#include <stdio.h>
+#include <string.h>
+
+int j,n;
+void changePosition(char *ch1, char *ch2)//to change position of the two characters in the string
+{
+    char tmp;
+    tmp = *ch1;
+    *ch1 = *ch2;
+    *ch2 = tmp;
+}
+
+void multi_swap(char *cht, int stno, int endno)
+{
+    int i;
+
+       for (i = stno; i <= endno-2; i++)
+       {
+
+          changePosition((cht+4), (cht+(3)));
+          puts(cht);
+
+          changePosition((cht+4), (cht+(2)));
+          puts(cht);
+
+        
+        }
+   }
+
+
+int main()
+{
+int k;
+    char str[] = "abcde";
+   printf("\n\n Pointer : Generate permutations of a given string :\n");
+   printf("--------------------------------------------------------\n");
+     n = strlen(str)-1;
+    printf(" The permutations of the string are : \n");
+    /*procedure for permutations of 5 char string*/
+   
+
+    multi_swap(str,0,n);
+    changePosition(str+1,str+2);
+    multi_swap(str,0,n);
+    changePosition(str+1,str+3);
+    multi_swap(str,0,n);
+    changePosition(str+1,str+4);
+    multi_swap(str,0,n);
+
+    changePosition(str+0,str+2);
+
+    multi_swap(str,0,n);
+    changePosition(str+1,str+2);
+    multi_swap(str,0,n);
+    changePosition(str+1,str+3);
+    multi_swap(str,0,n);
+    changePosition(str+1,str+4);
+    multi_swap(str,0,n);
+
+    changePosition(str+0,str+2);
+
+     multi_swap(str,0,n);
+    changePosition(str+1,str+2);
+    multi_swap(str,0,n);
+    changePosition(str+1,str+3);
+    multi_swap(str,0,n);
+    changePosition(str+1,str+4);
+    multi_swap(str,0,n);
+
+    changePosition(str+0,str+2);
+
+     multi_swap(str,0,n);
+    changePosition(str+1,str+2);
+    multi_swap(str,0,n);
+    changePosition(str+1,str+3);
+    multi_swap(str,0,n);
+    changePosition(str+1,str+4);
+    multi_swap(str,0,n);
+
+    changePosition(str+0,str+2);
+
+     multi_swap(str,0,n);
+    changePosition(str+1,str+2);
+    multi_swap(str,0,n);
+    changePosition(str+1,str+3);
+    multi_swap(str,0,n);
+    changePosition(str+1,str+4);
+    multi_swap(str,0,n);
+   
+
+
+return 0;
+}
