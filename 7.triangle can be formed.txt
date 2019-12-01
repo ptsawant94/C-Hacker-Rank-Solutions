@@ -1,0 +1,38 @@
+#include<stdio.h>
+
+int main()
+{
+    while(1)
+{
+
+ int SIDE1,SIDE2,SIDE3;
+
+ printf("\nENTER THE LENGTHS OF SIDES OF A TRIANGLE ");
+ scanf("\n%d %d %d",&SIDE1,&SIDE2,&SIDE3);
+
+ if((SIDE1>SIDE2)&&(SIDE1>SIDE3))
+ {
+     if(SIDE1<(SIDE2+SIDE3))
+        printf("Triangle can be formed");
+     else
+        printf("Triangle cannot be formed");
+ }
+ else if((SIDE2>SIDE1)&&(SIDE2>SIDE3))
+ {
+     if(SIDE2<(SIDE1+SIDE3))
+        printf("Triangle can be formed");
+     else
+        printf("Triangle cannot be formed");
+ }
+ else if((SIDE3>SIDE1)&&(SIDE3>SIDE2))
+
+ {   if(SIDE3<(SIDE2+SIDE1))
+        printf("Triangle can be formed");
+     else
+        printf("Triangle cannot be formed");
+ }
+ else if(SIDE1==SIDE2 && SIDE2==SIDE3)
+    printf("Triangle can be formed");
+
+}
+}
