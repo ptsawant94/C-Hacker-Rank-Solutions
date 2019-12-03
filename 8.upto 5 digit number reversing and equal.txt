@@ -1,0 +1,57 @@
+#include<stdio.h>
+#include<conio.h>
+#include<math.h>
+
+
+void main()
+{
+    while(1)
+{
+    //DECLARATION OF THE VARIABLES
+int NUMBER,REMINDER,count=0,i,f,p;//f and p are used to store number temporarily 
+float k;
+int REV_NUM = 0;
+
+   //GETTING INPUT FROM THE USER//
+printf("\n\nENTER THE NUMBER ");
+scanf("\n\n%d",&NUMBER);
+f=NUMBER;
+p=NUMBER;
+
+    //CALCULATE NUMBER OF DIGITS//
+  while(f!=0)           //until the last digit of the number
+    {
+       f=f/10;   
+       count++;
+    }
+    printf("\n\nNUMBER OF DIGITS=%d",count);
+
+    //REVERSE NUMBER //
+for(i=(count-1);i>=0;i--)
+ {
+    REMINDER=NUMBER%10;
+
+    NUMBER=NUMBER/10;
+
+    k=pow(10,i);
+
+    REV_NUM=REV_NUM+REMINDER*k;     //formula to form a reverse of the number
+
+ }
+
+printf("\nREVERSE OF THE NUMBER IS %ld",REV_NUM);
+
+    //CHECK IF THE NUMBER IS EQUAL TO IT'S REVERSE//
+if (p==REV_NUM)
+    {
+    printf("\n\nENTERED NUMBER AND REVERSE ARE EQUAL");
+    }
+else
+    {
+    printf("\nENTERED NUMBER AND IT'S REVERSE ARE NOT EQUAL");
+    }
+}
+}
+
+
+
