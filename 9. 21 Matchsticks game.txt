@@ -1,0 +1,37 @@
+#include<stdio.h>
+#include<conio.h>
+#include<math.h>
+
+/*          Rules of the game
+    There are 21 matchsticks.you can pick
+    at most 4 of them.One who picks up the
+    last lose.
+*/
+int main()
+{
+    //DECLARATION OF THE VARIABLES
+    int num,com_choose,remain=21;
+
+while(remain!=0) //until 21 matchsticks are taken
+{
+    //user's turn
+    printf("\nPICK UP MATHSTICKS (1,2,3 OR 4) =");
+    scanf("%d",&num);
+    //computer's turn
+    com_choose=5-num;//if computer choose 5 less than user every time computer will win ultimately
+    printf("\nI PICK %d OUT OF REMAINING MATCHSTICKS\n",com_choose);
+   
+    remain=remain-(num+com_choose);//remaining matchsticks
+    printf("\nSO NOW REMAINING MATCHSTICKS=%d\n",remain);
+   
+    if(remain==1)//keep the game on until the last matchstick
+    {
+        printf("\nYOU HAVE TO CHOOSE THE LAST ONE ...SO YOU LOSE\n");
+        break;
+    }
+}
+return 0;
+}
+
+
+
