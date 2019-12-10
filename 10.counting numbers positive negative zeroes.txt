@@ -1,0 +1,36 @@
+#include<stdio.h>
+#include<conio.h>
+#include<math.h>
+
+int main()
+{
+
+    int num,count_zer=0,count_posi=0,count_neg=0;
+    char user;
+    while(user!='n')
+{
+    printf("\nENTER NUMBER");
+    scanf("%d",&num);
+    if(num==0)
+    {
+        count_zer++;
+    }
+    else if(num<0)
+    {
+        count_neg++;
+    }
+    else
+    {
+        count_posi++;
+    }
+
+    printf("\nWANT TO ENTER THE NUMBER AGAIN y or n");
+    scanf(" %c", &user);
+
+}
+  printf("NUMBER OF ZEROS YOU ENTERED=%d\nNUMBER OF POSITIVE NUMBERS=%d\nNUMBER OF NEGATIVE NUMBERS=%d",count_zer,count_posi,count_neg);
+    return 0;
+
+
+}
+
