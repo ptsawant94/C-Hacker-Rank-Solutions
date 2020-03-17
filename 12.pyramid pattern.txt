@@ -1,0 +1,29 @@
+#include<stdio.h>
+#include<conio.h>
+#include<math.h>
+
+int main()
+{
+
+    int i,j,k,blank=0;
+
+for(j=0;j<=7;j++)
+    {
+    for(i=(65-j);i<=(71-j);i++)
+        if(i>=65&&i<=71)
+            printf("%c",i);
+
+    for (k=0;k<blank;k++)
+            printf(" ");
+            blank=blank+2;
+
+    for(i=(71-j);i>=(65-j);i--)
+        if(i>=65&&i<=71)
+            printf("%c",i);
+            printf("\n");
+    }
+return 0;
+}
+
+
+
